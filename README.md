@@ -68,6 +68,39 @@ Alla exemplen ovan genererar nedanstående text i loggen men de två bra exemple
 
 ### Hårdkoding
 
+**Dåligt exempel:**
+
+*Objective-C*
+
+```objective-c
+NSArray *names = @[@"Cenny", @"Carl", @"Pär”];   
+
+for (int i = 0; i < 3; i++) {
+	NSLog(@"%@!", names[i]);
+}
+```
+
+**Bra exempel:**
+
+*Objective-C*
+
+```
+for (NSString *name in names) {
+	NSLog(@"%@!", name);
+}
+```
+
+*Swift*
+
+```swift
+let names = ["Cenny", "Carl", "Pär”]
+
+names.forEach { name in
+	print("\(name)!")
+}
+```
+
+
 ### Gruppera kod
 
 ### Namn
