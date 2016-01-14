@@ -53,7 +53,7 @@ for (NSString *name in names) {
 *Swift*
 
 ```swift
-let names = ["Cenny", "Carl", "Pär”]
+let names = ["Cenny", "Carl", "Pär"]
 
 names.forEach { name in
 	print("\(name)!")
