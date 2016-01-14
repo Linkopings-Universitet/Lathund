@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-* [Generelt](#generelt)
+* [Generellt](#generellt)
   * [DRY](#dry)
-  * [Hårdkoding](#hårdkoding)
+  * [Hårdkodning](#hårdkodning)
   * [Gruppera kod](#gruppera-kod)
   * [Namn](#namn)
   * [Indentering](#indentering)
@@ -16,12 +16,12 @@
   * [Optionals](#optionals)
   * [Higher order functions](#higher-order-functions)
   * [Struct vs Class vs Enum](#struct-vs-class-vs-enum)
-  
-## Generelt
+
+## Generellt
 
 ### DRY
 
-DRY Står för 'don't reapeat yourself' vilket är ett bra regel att ha när man skriver kod. Detta betyder att ingen eller minimal repetion och hårdkodning
+DRY Står för "Don't Repeat Yourself" vilket är en bra regel att ha när man skriver kod. Detta betyder att försöka ha ingen eller minimal repetition och hårdkodning
 
 **Dåligt exempel:**
 
@@ -43,7 +43,7 @@ NSLog(@"%@!", name3);
 *Objective-C*
 
 ```objective-c
-NSArray *names = @[@"Cenny", @"Carl", @"Pär”];   
+NSArray *names = @[@"Cenny", @"Carl", @"Pär”];
 
 for (NSString *name in names) {
 	NSLog(@"%@!", name);
@@ -66,7 +66,7 @@ Alla exemplen ovan genererar nedanstående text i loggen men de två bra exemple
 	Carl!
 	Pär!
 
-### Hårdkoding
+### Hårdkodning
 
 **Dåligt exempel:**
 
