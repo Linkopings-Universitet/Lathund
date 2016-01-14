@@ -103,7 +103,42 @@ names.forEach { name in
 
 ### Gruppera kod
 
-### Namn
+### Namngivning
+Det är viktigt att namnge variabler, funktioner och andra saker i sin kod. Namn bör beskriva vad objektet eller funktionen är och ska göra, och vara tydligt. Om man namnger saker bra hjälper det mycket med att göra koden mer läsbar.
+
+**Dåligt exempel:**
+
+*Objective-C*
+
+```objective-c
+- (void) foo:(NSarray) bar {
+  for (NSString *mystring in bar) {
+    NSLog(@"%@!", mystring);
+  }
+}
+
+NSArray *n = @[@"Cenny", @"Carl", @"Pär"];
+
+[foo n];
+```
+
+**Bra exempel**
+
+*Objective-C*
+
+```objective-c
+- (void) printNames:(NSarray) names {
+  for (NSString *name in names) {
+    NSLog(@"%@!", s);
+  }
+}
+
+NSArray *names = @[@"Cenny", @"Carl", @"Pär"];
+
+[printNames names];
+```
+
+
 
 ### Indentering
 
