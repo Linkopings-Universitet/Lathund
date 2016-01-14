@@ -84,7 +84,7 @@ for (int i = 0; i < 3; i++) {
 
 *Objective-C*
 
-```
+```objective-c
 for (NSString *name in names) {
 	NSLog(@"%@!", name);
 }
