@@ -111,6 +111,7 @@ Det är viktigt att namnge variabler, funktioner och andra saker i sin kod. Namn
 *Objective-C*
 
 ```objective-c
+// In the implementation of the simpleExample class
 - (void) foo:(NSarray) bar {
   for (NSString *mystring in bar) {
     NSLog(@"%@!", mystring);
@@ -119,7 +120,7 @@ Det är viktigt att namnge variabler, funktioner och andra saker i sin kod. Namn
 
 NSArray *n = @[@"Cenny", @"Carl", @"Pär"];
 
-[foo n];
+[simpleExample foo:n];
 ```
 
 **Bra exempel**
@@ -127,6 +128,7 @@ NSArray *n = @[@"Cenny", @"Carl", @"Pär"];
 *Objective-C*
 
 ```objective-c
+// In the implementation of the simpleExample class
 - (void) printNames:(NSarray) names {
   for (NSString *name in names) {
     NSLog(@"%@!", s);
@@ -135,7 +137,7 @@ NSArray *n = @[@"Cenny", @"Carl", @"Pär"];
 
 NSArray *names = @[@"Cenny", @"Carl", @"Pär"];
 
-[printNames names];
+[simpleExample printNames:names];
 ```
 
 
