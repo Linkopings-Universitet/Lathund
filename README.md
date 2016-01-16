@@ -104,23 +104,31 @@ names.forEach { name in
 ### Gruppera kod
 
 ### Namngivning
-Det är viktigt att namnge variabler, funktioner och andra saker i sin kod. Namn bör beskriva vad objektet eller funktionen är och ska göra, och vara tydligt. Om man namnger saker bra hjälper det mycket med att göra koden mer läsbar.
+Det är viktigt att namnge variabler, metoder, klasser och andra saker i sin kod. Ofta finns det en konvention för språket om hur detta ska göras. I Swift och Objective-C är konventionen följande:
+
+- Klasser ska börja med stor bokstav och vid flera ord ska camel case användas.
+- Metoder och funktioner ska börja med liten bokstav och vid flera ord ska camel case användas.
+- Enums och dess värden ska börja med stor bokstav och vid flera ord ska camel case användas.
+- Variabler ska börja med liten bokstav och vid flera ord ska camel case användas.
+
+Utöver detta så är det viktigt att namn är beskrivande av vad objektet, klassen eller metoden är eller ska göra. Dålig namngivning kan leda till otydligheter om koden.
 
 **Dåligt exempel:**
 
 *Objective-C*
 
 ```objective-c
-// In the implementation of the simpleExample class
-- (void) foo:(NSarray) bar {
+@implementation simpleClass
++ (void) foo:(NSarray) bar {
   for (NSString *mystring in bar) {
     NSLog(@"%@!", mystring);
   }
 }
+@end
 
 NSArray *n = @[@"Cenny", @"Carl", @"Pär"];
 
-[simpleExample foo:n];
+[simpleClass foo:n];
 ```
 
 **Bra exempel**
@@ -128,16 +136,17 @@ NSArray *n = @[@"Cenny", @"Carl", @"Pär"];
 *Objective-C*
 
 ```objective-c
-// In the implementation of the simpleExample class
-- (void) printNames:(NSarray) names {
+@implementation SimpleClass
++ (void) printNames:(NSarray) names {
   for (NSString *name in names) {
     NSLog(@"%@!", s);
   }
 }
+@end
 
 NSArray *names = @[@"Cenny", @"Carl", @"Pär"];
 
-[simpleExample printNames:names];
+[SimpleClass printNames:names];
 ```
 
 
