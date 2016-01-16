@@ -6,7 +6,7 @@
   * [DRY](#dry)
   * [Hårdkodning](#hårdkodning)
   * [Gruppera kod](#gruppera-kod)
-  * [Namn](#namn)
+  * [Namngivning](#namngivning)
   * [Indentering](#indentering)
   * [Måsvingar](#måsvingar)
 * [Objective-C](#objective-c)
@@ -119,7 +119,7 @@ Utöver detta så är det viktigt att namn är beskrivande av vad objektet, klas
 
 ```objective-c
 @implementation simpleClass
-+ (void) foo:(NSarray) bar {
++ (void) foo:(NSarray *) bar {
   for (NSString *mystring in bar) {
     NSLog(@"%@!", mystring);
   }
@@ -137,7 +137,7 @@ NSArray *n = @[@"Cenny", @"Carl", @"Pär"];
 
 ```objective-c
 @implementation SimpleClass
-+ (void) printNames:(NSarray) names {
++ (void) printNames:(NSarray *) names {
   for (NSString *name in names) {
     NSLog(@"%@!", s);
   }
