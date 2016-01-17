@@ -163,29 +163,29 @@ Många språk har konventioner om var måsvingarna ska placeras och det är reko
 
 *Objective-C*
 
-```objective-c
-@implementation SimpleClass
-+ (void) printNames:(NSarray *) names 
+```swift
+class SimpleClass  {
+  func printNames(names: Array)
 {
-  for (NSString *name in names) {
-    NSLog(@"%@!", s);
+    names.forEach { name in
+      print("\(name)!")
 }
 }
-@end
+}
 ```
 
 **Bra exempel**
 
 *Objective-C*
 
-```objective-c
-@implementation SimpleClass
-+ (void) printNames:(NSarray *) names {
-  for (NSString *name in names) {
-    NSLog(@"%@!", s);
+```swift
+class SimpleClass {
+  func printNames(names: Array) {
+    names.forEach { name in
+      print("\(name)!")
+    }
   }
 }
-@end
 ```
 
 ## Objective-C
