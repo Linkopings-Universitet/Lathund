@@ -68,6 +68,8 @@ Alla exemplen ovan genererar nedanstående text i loggen men de två bra exemple
 
 ### Hårdkodning
 
+Hårdkoning (även kallat statisk lösning) är när man löst ett problem för endast ett specifikt scenario. Om du har en lösning för hur du kan göra x tre gånger men inte två eller fyra gånger så har du en väldigt statisk lösning på problemet. Detta kan leda till repetition och buggar.
+
 **Dåligt exempel:**
 
 *Objective-C*
