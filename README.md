@@ -157,6 +157,37 @@ NSArray *names = @[@"Cenny", @"Carl", @"Pär"];
 
 ### Måsvingar
 
+Många språk har konventioner om var måsvingarna ska placeras och det är rekommenderat att följa dessa konventioner då det är det som förväntas av din kod. Om du skulle vara ovetande av vilken konvention som gäller eller det inte finns någon så är det viktig att du är konsekvent med hur du placerar. Det är också viktigt att måsvingarna är rätt indenterade, den avslutade måsvingen ska va i linje med metoden/loopen/if/osv början.
+
+**Dåligt exempel:**
+
+*Objective-C*
+
+```objective-c
+@implementation SimpleClass
++ (void) printNames:(NSarray *) names 
+{
+  for (NSString *name in names) {
+    NSLog(@"%@!", s);
+}
+}
+@end
+```
+
+**Bra exempel**
+
+*Objective-C*
+
+```objective-c
+@implementation SimpleClass
++ (void) printNames:(NSarray *) names {
+  for (NSString *name in names) {
+    NSLog(@"%@!", s);
+  }
+}
+@end
+```
+
 ## Objective-C
 
 ### Properties
