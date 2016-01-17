@@ -8,6 +8,7 @@
   * [Gruppera kod](#gruppera-kod)
   * [Namngivning](#namngivning)
   * [Indentering](#indentering)
+  * [Kommentarer](#kommentarer)
   * [Måsvingar](#måsvingar)
 * [Objective-C](#objective-c)
   * [Properties](#properties)
@@ -151,9 +152,41 @@ NSArray *names = @[@"Cenny", @"Carl", @"Pär"];
 [SimpleClass printNames:names];
 ```
 
-
-
 ### Indentering
+
+### Kommentarer
+
+Att kommentera sin kod är ett väldigt kraftfullt verktyg som ska användas för att förmedla information som inte är helt uppenbart för läsaren av koden. Det finns inga begränsningar i vad en kommentar ska innehålla men den alltid ha som syfte att förtydliga något som inte är uppenbart. Då kod ska vara tydlig och enkel så ska inte mycket kommentering behövas i ett projekt. 
+
+Om man märker att man behöver kommentera sin kod så är värt att fundera om man kanske kan göra sin kod enklare istället och bespara sig kommentaren. Detta kan ofta vara önskvärt då för mycket kommentarer kan skräppa ner koden och glömmer man ändra kommentaren i samband med en kod ändring så blir det genast väldigt förvirrande för läsaren.
+
+**Dåligt exempel:**
+
+```swift
+class SimpleClass {
+  // A printing method
+  func printNames(names: Array) {
+    // looping all the names
+    names.forEach { name in
+      // Printing the name
+      print("\(name)")
+    }
+  }
+}
+```
+
+**Bra exempel:**
+
+```swift
+// A simple class made for demonstration purposes
+class SimpleClass {
+  func printNames(names: Array) {
+    names.forEach { name in
+      print("\(name)")
+    }
+  }
+}
+```
 
 ### Måsvingar
 
