@@ -154,6 +154,32 @@ NSArray *names = @[@"Cenny", @"Carl", @"Pär"];
 
 ### Indentering
 
+Indentering är ett sätt att ge läsaren av koden en bra uppfattning av var saker börjar och slutar. Indentering är också ett bra hjälpmedel till att identifiera komplicerad kod. Om koden innehåller för mycket indentering i form av loopar och if's så kan det var ett tecken på att saker börjar bli komplext och det är dags att bryta ner problemet och strukturera om. 
+
+**Dåligt exempel:**
+
+```swift
+class SimpleClass {
+func printNames(names: Array) {
+names.forEach { name in
+print("\(name)")
+}
+}
+}
+```
+
+**Bra exempel:**
+
+```swift
+class SimpleClass {
+  func printNames(names: Array) {
+    names.forEach { name in
+      print("\(name)")
+    }
+  }
+}
+```
+
 ### Kommentarer
 
 Att kommentera sin kod är ett väldigt kraftfullt verktyg som ska användas för att förmedla information som inte är helt uppenbart för läsaren av koden. Det finns inga begränsningar i vad en kommentar ska innehålla men den alltid ha som syfte att förtydliga något som inte är uppenbart. Då kod ska vara tydlig och enkel så ska inte mycket kommentering behövas i ett projekt. 
