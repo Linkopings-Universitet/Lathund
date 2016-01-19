@@ -106,6 +106,33 @@ names.forEach { name in
 
 ### Gruppera kod
 
+Att gruppera kod är ett bra sätt att förmedla till läsaren när ett problem är löst och ett annat börjar. Man bör sära kod som inte har med varandra att gör med ett mellanrum, fler mellanrum än det och koden kan lätt se ostrukturerad ut. 
+
+**Dåligt exempel:**
+
+```swift
+let names = ["Cenny", "Pär", "Carl"]
+
+
+
+let capitalNames = names.map { $0.uppercaseString }
+let cars = ["Volvo", "SAAB"]
+cars.forEach { car in
+    print("\(car)")
+```
+
+**Bra exempel:**
+
+```swift
+let names = ["Cenny", "Pär", "Carl"]
+let capitalNames = names.map { $0.uppercaseString }
+
+let cars = ["Volvo", "SAAB"]
+cars.forEach { car in
+    print("\(car)")
+}
+```
+
 ### Namngivning
 Det är viktigt att namnge variabler, metoder, klasser och andra saker i sin kod. Ofta finns det en konvention för språket om hur detta ska göras. I Swift och Objective-C är konventionen följande:
 
