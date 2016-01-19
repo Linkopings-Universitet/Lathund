@@ -283,12 +283,12 @@ Att deklarera och använda en instans variabel kan göras på flera sätt. Att g
 **Dåligt exempel:**
 
 ```objective-c
-@interface SimpleClas {
+@interface SimpleClas() {
 	NSArray *_names;
 }
 @end
 
-@implementation
+@implementation SimpleClas
 - (void)fillArrayWithNames {
   _names = @[@"Cenny", @"Pär"];
 }
@@ -299,11 +299,11 @@ Att deklarera och använda en instans variabel kan göras på flera sätt. Att g
 **Bra exempel**
 
 ```objective-c
-@interface SimpleClas 
+@interface SimpleClas ()
 @property (nonatomic, strong) NSArray *names;
 @end
 
-@implementation
+@implementation SimpleClas
 - (void)fillArrayWithNames {
   self.names = @[@"Cenny", @"Pär"];
 }
