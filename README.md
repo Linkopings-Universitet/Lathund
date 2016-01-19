@@ -278,6 +278,39 @@ class SimpleClass {
 
 ### Properties
 
+Att deklarera och använda en instans variabel kan göras på flera sätt. Att göra det på det mest moderna sättet har klart sina fördelar. Det bra exemplet nedan skapar en instans variabel, genererar också set/get metoder och definierar minneshantering.
+
+**Dåligt exempel:**
+
+```objective-c
+@interface SimpleClas {
+	NSArray *_names;
+}
+@end
+
+@implementation
+- (void)fillArrayWithNames {
+  _names = @[@"Cenny", @"Pär"];
+}
+
+@end
+```
+
+**Bra exempel**
+
+```objective-c
+@interface SimpleClas 
+@property (nonatomic, strong) NSArray *names;
+@end
+
+@implementation
+- (void)fillArrayWithNames {
+  self.names = @[@"Cenny", @"Pär"];
+}
+
+@end
+```
+
 ### Undvik C
 
 ## Swift
