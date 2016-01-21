@@ -320,3 +320,7 @@ Att deklarera och använda en instans variabel kan göras på flera sätt. Att g
 ### Higher order functions
 
 ### Struct vs Class vs Enum
+
+Att välja rätt typ är ett viktigt steg när man löser sina problem. Som regel är struct och enum att föredra i Swift då dessa är *copy by value* istället för *copy by referens*. Enum och struct går heller inte att subklassa vilket uppmanar till protocol orienterad programmering. 
+
+Klassar ska endast användas när man vill arbeta med referenser eller subklassning. Det finns inget facit när det är bäst att använda vad men vi förväntar oss att ni kan motivera erat val av typ.
