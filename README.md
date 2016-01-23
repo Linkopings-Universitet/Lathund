@@ -313,6 +313,36 @@ Att deklarera och använda en instans variabel kan göras på flera sätt. Att g
 
 ### Undvik C
 
+Då Objective-C är ett superset av C så är det följt möjligt att att använda C i kombination med Objective-C kod. I en del fall är detta önskvärt då man kanske arbetar med ett bibliotek som bara finns i C. Men i alla andra fall så bör detta undvikas då det kan leda till onödigt komplicerad kod. Nedan finner du några exempel på C kod respektive Objective-C kod. 
+
+#### Använd NSString för sträng hantering
+
+**Dåligt exempel:**
+
+```c
+char* name = "Carl";
+```
+
+**Bra exempel:**
+
+```objective-c
+NSString *name = @"Carl"; 
+```
+
+#### Använd NSArray för arrays 
+
+**Dåligt exempel:**
+
+```c
+int[] numbers = {1, 2, 3};
+```
+
+**Bra exempel:**
+
+```objective-c
+NSArray *numbers = @[@1, @2, @3];
+```
+
 ## Swift
 
 ### Optionals
